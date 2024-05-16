@@ -3,22 +3,26 @@ package co.uniquindio.edu.javafx.Modelo;
 public class Guerrero extends EnemigoPlantilla {
 
     @Override
-    public void setSkills() {
-        System.out.println("Health: 150, Mana: 0, Stamina: 150");
+    public String setHabilidades() {
+        String mensajeHabilidades = "Salud: 150, Mana: 0, Stamina: 150";
+        return mensajeHabilidades;
     }
 
     @Override
-    public void ataque() {
-        System.out.println("Warrior attack");
+    public String ataque() {
+        String mensajeAtaque = ". El guerreo atacó";
+        return mensajeAtaque;
     }
 
     @Override
-    public void proteccion() {
-        System.out.println("Warrior protect");
+    public String proteccion() {
+        String mensajeProteccion =", se protegió";
+        return mensajeProteccion;
     }
 
     @Override
-    public void resultado() {
-        System.out.println("Warrior has survived");
+    public String resultado() {
+        String mensajeResultado = ", ha sobrevivido";
+        return mensajeResultado;
     }
 }
