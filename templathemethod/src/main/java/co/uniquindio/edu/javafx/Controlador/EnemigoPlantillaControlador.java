@@ -29,8 +29,6 @@ public class EnemigoPlantillaControlador {
     void iniciarBatalla(ActionEvent event) {
         EnemigoPlantilla guerrero = new Guerrero();
         EnemigoPlantilla mago = new Mago();
-        //guerrero.template();
-        //mago.template();
         txtResultado.setText("Gerrero:  " + guerrero.template() +"\n" + "Mago:  " + mago.template());
     }
 
